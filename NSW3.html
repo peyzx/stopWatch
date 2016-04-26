@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <script type="text/javascript" src='NSW1.js'></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                <link rel="stylesheet" type="text/css" href="NSW2.css"/>
+		<title>StopWatch</title>
+	</head>
+	<body onload="show();">
+		<div class="container">
+			<div class="panel panel-primary">
+				<div class="panel-heading">StopWatch</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 text-center">
+                                                    <div class="well well-sm text-center" ><span id="result"></span></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3 text-center">
+                                                    <button type="button" class="btn btn-success" id="start" onclick="start();">Start</button>
+                                                    <button type="button" class="btn btn-danger" id="stop" onclick="stop();">Stop</button>
+                                                    <button type="button" class="btn btn-warning" id="clear" onclick="reset();">Clear</button>
+							<button type="button" class="btn btn-info" id="lap">Lap</button>
+						</div>
+					</div>
+					<div class="laps-block">
+						<b>Laps</b>
+						<div id="laps" class="laps-block">
+							<span id="empty-laps">No laps added</span>
+							<ol class="list-group" id="list"></ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
