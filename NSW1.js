@@ -55,5 +55,29 @@ function formatTime(time) {
 	return newTime;
 }
 
+function show() {
+	$result = document.getElementById('result');
+	update();
+}
+
+function update() {
+	$result.innerHTML = formatTime(x.time());
+}
+
+function start() {
+	clocktimer = setInterval("update()", 1);
+	x.start();
+}
+
+function stop() {
+	x.stop();
+	clearInterval(clocktimer);
+}
+
+function reset() {
+	stop();
+	x.reset();
+	update();
+}
 
 
