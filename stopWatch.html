@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src='stopWatch.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stopWatch.css"/>
+    <title>StopWatch</title>
+    <script>
+        window.onload = function() {
+            var stopWatch = new StopWatch();
+            stopWatch.init();
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">StopWatch</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3 text-center">
+                    <div class="well well-sm text-center"><span id="resultSpan"></span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3 text-center">
+                    <button type="button" class="btn btn-success" id="startBtn">Start</button>
+                    <button type="button" class="btn btn-danger" id="stopBtn">Stop</button>
+                    <button type="button" class="btn btn-warning" id="clearBtn">Clear</button>
+                    <button type="button" class="btn btn-info" id="lapBtn">Lap</button>
+                </div>
+            </div>
+            <div class="laps-block">
+                <b>Laps</b>
+                <div id="laps" class="laps-block">
+                    <span id="empty-laps">No laps added</span>
+                    <ol class="list-group" id="list"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

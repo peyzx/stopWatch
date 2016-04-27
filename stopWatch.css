@@ -1,0 +1,24 @@
+.container .panel {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.timeScreen {
+    font-size: x-large;
+}
+
+#laps {
+    height: 150px;
+    overflow-y: auto;
+}
+
+ol li.list-group-item {
+    list-style: decimal inside;
+    display: list-item;
+}
+
+.laps-block {
+    margin-top: 20px;
+}
