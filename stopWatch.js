@@ -7,6 +7,8 @@ function StopWatch() {
     this.resultSpan;
     this.startTime = 0;
     this.pauseTime = 0;
+       resultSpan.innerHTML = "00 : 00 : 00.000";
+
 };
 
 StopWatch.prototype.init = function () {
@@ -63,7 +65,7 @@ StopWatch.prototype.clear = function () {
     this.startTime = 0;
     this.pauseTime = 0;
     this.clocktimer = 0;
-    resultSpan.innerHTML = "00 : 00 : 00.000    ";
+    resultSpan.innerHTML = "00 : 00 : 00.000";
 };
 
 StopWatch.prototype.show = function () {

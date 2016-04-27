@@ -6,11 +6,24 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stopWatch.css"/>
     <title>StopWatch</title>
-    <script>
+<!--    <script>
         window.onload = function() {
             var stopWatch = new StopWatch();
             stopWatch.init();
-        }
+        };
+    </script>-->
+
+<script>
+    function ready(){
+        (new StopWatch()).init();
+        alert('Page downloaded');
+    };
+    document.addEventListener("DOMContentLoaded", ready);
+</script>
+    <script>
+        window.onbeforeunload = function() {
+            return "Are you sure?";
+        };
     </script>
 </head>
 <body>
