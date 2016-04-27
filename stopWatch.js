@@ -48,7 +48,6 @@ StopWatch.prototype.lap = function() {
     var diffDate = (new Date()).getTime() - this.startTime;
     var d = new Date(diffDate);
     var lap = document.createElement('li');
-    console.log(lap);
     lap.classList.add('list-group-item');
     lap.innerHTML = d.getUTCHours() + ' : ' +
         d.getUTCMinutes() + ' : ' + d.getUTCSeconds() + ' : ' +
