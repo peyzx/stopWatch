@@ -61,6 +61,7 @@ StopWatch.prototype.clear = function() {
     this.pauseTime = 0;
     this.clocktimer = 0;
     this.resultSpan.innerHTML = "00 : 00 : 00.000";
+    clearChildren(this.lapBlock)
 };
 
 StopWatch.prototype.show = function() {
@@ -76,3 +77,8 @@ $.fn.stopwatch = function() {
         new StopWatch(this[i]).init();
     }
 };
+
+function clearChildren(node) {
+    while (node.lastChild)
+        node.removeChild(node.lastChild);
+}
